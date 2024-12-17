@@ -1,0 +1,26 @@
+name: .env  # This will be the name used in the environment.yml, but the environment will be located using --prefix
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+      - streamlit==1.38.0
+      - torch==2.1.0
+      - langchain==0.0.180
+      - langchain-community==0.2.16
+      - langchain-text-splitters==0.2.4
+      - langchain-chroma==0.1.3
+      - langchain-huggingface==0.0.3
+      - langchain-groq==0.1.9
+      - unstructured==0.15.0
+      - unstructured[pdf]==0.15.0
+      - nltk==3.8.1
+      - pyperclip==1.8.2
+      - fpdf==1.7.2
+      - python-docx==0.8.11
+      - gtts==2.3.1
+      - opencv-python-headless==4.5.3.56
+      - chromadb==0.3.0
+
