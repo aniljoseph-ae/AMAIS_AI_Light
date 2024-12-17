@@ -31,7 +31,6 @@ dataclasses-json==0.6.7
 defusedxml==0.7.1
 Deprecated==1.2.15
 distro==1.9.0
-docx==0.2.4
 durationpy==0.9
 effdet==0.4.1
 emoji==2.14.0
