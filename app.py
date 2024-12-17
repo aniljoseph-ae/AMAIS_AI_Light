@@ -1,5 +1,5 @@
 import os
-from docx import Document
+from python_docx import Document
 from fpdf import FPDF
 from gtts import gTTS
 import numpy as np
