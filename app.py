@@ -154,6 +154,7 @@ class InteractiveChatApp:
                 audio_path = "response.mp3"
                 gTTS(response).save(audio_path)
                 st.audio(audio_path)
+    """
         with col2:
             if st.button("📄 Generate PDF"):
                 pdf = FPDF()
@@ -162,7 +163,7 @@ class InteractiveChatApp:
                 pdf.multi_cell(0, 10, response)
                 pdf.output("response.pdf")
                 st.download_button("Download PDF", "response.pdf")
-    """
+    
         with col3:
             if st.button("📄 Generate DOCX"):
                 doc = Document()
