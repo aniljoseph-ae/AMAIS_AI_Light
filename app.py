@@ -1,5 +1,5 @@
 import os
-from docx import Document
+# from docx import Document
 
 from fpdf import FPDF
 from gtts import gTTS
@@ -162,12 +162,14 @@ class InteractiveChatApp:
                 pdf.multi_cell(0, 10, response)
                 pdf.output("response.pdf")
                 st.download_button("Download PDF", "response.pdf")
+    """
         with col3:
             if st.button("📄 Generate DOCX"):
                 doc = Document()
                 doc.add_paragraph(response)
                 doc.save("response.docx")
                 st.download_button("Download DOCX", "response.docx")
+    """
 
     def run(self):
         """
